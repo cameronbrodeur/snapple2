@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Test coverage
+coverage
+*.lcov
+
+# ROM files (copyrighted, not distributed)
+roms/*.bin
+roms/*.rom
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+
+# IDE and tooling
+.vscode
+.claude
+.local
+
+# Git worktrees
+.worktrees/

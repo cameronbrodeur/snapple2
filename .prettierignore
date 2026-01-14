@@ -1,0 +1,15 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Logs
+*.log
+
+# Documentation (don't format markdown)
+*.md
+
+# IDE and tooling
+.claude
+.vscode

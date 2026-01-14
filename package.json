@@ -1,0 +1,63 @@
+{
+    "name": "snapple",
+    "version": "0.1.0",
+    "description": "Cycle-accurate Apple II Plus emulator for the terminal",
+    "type": "module",
+    "main": "./dist/cli.js",
+    "bin": {
+        "snapple": "./dist/cli.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "clean": "rimraf dist",
+        "start": "tsx src/cli.tsx",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "keywords": [
+        "apple2",
+        "apple-ii",
+        "emulator",
+        "6502",
+        "retro",
+        "terminal",
+        "cli",
+        "applesoft",
+        "basic",
+        "vintage",
+        "computing"
+    ],
+    "author": "Cameron Brodeur",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/snapple2.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yourusername/snapple2/issues"
+    },
+    "homepage": "https://github.com/yourusername/snapple2#readme",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "cpu6502": "git+https://github.com/cameronbrodeur/cpu6502.git#4ba4369",
+        "ink": "^6.5.1",
+        "ink-select-input": "^6.2.0",
+        "react": "^19.2.0",
+        "string-width": "^8.1.0"
+    },
+    "devDependencies": {
+        "@testing-library/react": "^16.3.1",
+        "@types/node": "^24.10.1",
+        "@types/react": "^19.2.7",
+        "jsdom": "^27.4.0",
+        "prettier": "^3.7.3",
+        "rimraf": "^6.1.2",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3",
+        "vitest": "^4.0.15"
+    }
+}
